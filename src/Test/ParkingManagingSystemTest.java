@@ -1,7 +1,7 @@
 package Test;
 
-import Main.Car;
-import Main.ParkingLot;
+import ParkingManagingSystem.Car;
+import ParkingManagingSystem.ParkingLot;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
