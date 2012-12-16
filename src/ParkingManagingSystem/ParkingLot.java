@@ -50,4 +50,10 @@ public class ParkingLot {
         }
         return null;  //To change body of created methods use File | Settings | File Templates.
     }
+    public float vacancyRate()
+    {
+        int availableSpace = availableParkingSpace();
+        float rate = (float)availableSpace/parkCapacity;
+        return rate;
+    }
 }
