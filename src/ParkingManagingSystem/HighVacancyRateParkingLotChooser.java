@@ -12,16 +12,16 @@ import java.util.Vector;
  */
 public class HighVacancyRateParkingLotChooser implements ParkingLotChooser {
     @Override
-    public ParkingLot getAvailableParkLot(Vector<ParkingLot> parkingLotList)
+    public ParkingLot getAvailableParkLot(Vector<ParkingLot> parkingLotVector)
     {
-        if(parkingLotList.size() == 0)
+        if(parkingLotVector.size() == 0)
             return null;
 
-        ParkingLot highVacancyRateParkingLot = parkingLotList.get(0);
+        ParkingLot highVacancyRateParkingLot = parkingLotVector.get(0);
         float vacancyRate = highVacancyRateParkingLot.vacancyRate();
-        for(int i = 1; i < parkingLotList.size(); i++)
+        for(int i = 1; i < parkingLotVector.size(); i++)
         {
-            ParkingLot tempLot = parkingLotList.get(i);
+            ParkingLot tempLot = parkingLotVector.get(i);
             float  tempRate = tempLot.vacancyRate();
             if(tempRate > vacancyRate)
             {

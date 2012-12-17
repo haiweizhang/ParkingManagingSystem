@@ -11,5 +11,5 @@ import java.util.Vector;
  * To change this template use File | Settings | File Templates.
  */
 public interface ParkingLotChooser {
-    ParkingLot getAvailableParkLot(Vector<ParkingLot> parkingLotList);
+    ParkingLot getAvailableParkLot(Vector<ParkingLot> parkingLotVector);
 }

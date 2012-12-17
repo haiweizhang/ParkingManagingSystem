@@ -12,8 +12,8 @@ import java.util.Vector;
  */
 public class FirstAvailableParkingLotChooser implements ParkingLotChooser {
     @Override
-    public ParkingLot getAvailableParkLot(Vector<ParkingLot> parkingLotList) {
-        for(ParkingLot pLot : parkingLotList){
+    public ParkingLot getAvailableParkLot(Vector<ParkingLot> parkingLotVector) {
+        for(ParkingLot pLot : parkingLotVector){
             if(pLot.availableParkingSpace() > 0)
                 return pLot;
         }

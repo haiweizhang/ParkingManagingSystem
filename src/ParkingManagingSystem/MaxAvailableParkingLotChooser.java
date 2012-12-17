@@ -12,7 +12,7 @@ import java.util.Vector;
  */
 public class MaxAvailableParkingLotChooser implements ParkingLotChooser {
     @Override
-    public ParkingLot getAvailableParkLot(Vector<ParkingLot> parkingLotList) {
+    public ParkingLot getAvailableParkLot(Vector<ParkingLot> parkingLotVector) {
 
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
