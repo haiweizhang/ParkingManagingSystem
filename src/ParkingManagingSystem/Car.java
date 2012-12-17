@@ -9,6 +9,7 @@ package ParkingManagingSystem;
  */
 public class Car {
     private String id;
+    public Car(){}
     public Car(String s) {
         //To change body of created methods use File | Settings | File Templates.
         id = s;

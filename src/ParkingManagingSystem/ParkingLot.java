@@ -1,6 +1,6 @@
 package ParkingManagingSystem;
 
-import java.util.Vector;
+import java.util.HashMap;
 
 /**
  * Created with IntelliJ IDEA.
@@ -11,7 +11,8 @@ import java.util.Vector;
  */
 public class ParkingLot {
     private int parkCapacity;
-    private Vector<Car> parkingCarList;
+    private HashMap<ParkingReceipt, Car> parkingCarList;
+
     public void clear()
     {
         parkingCarList.clear();
@@ -19,36 +20,38 @@ public class ParkingLot {
     public  ParkingLot(int capacity)
     {
         parkCapacity = capacity;
-        parkingCarList = new Vector<Car>();
+        parkingCarList = new HashMap<ParkingReceipt, Car>();
     }
     public int availableParkingSpace()
     {
         return (parkCapacity - parkingCarList.size());  //To change body of created methods use File | Settings | File Templates.
     }
 
-    public boolean park(Car aCar)
+    public ParkingReceipt park(Car aCar)
     {
         if(parkingCarList.size() < parkCapacity)
         {
-            parkingCarList.add(aCar);
-            return true;
+            ParkingReceipt receipt = new ParkingReceipt();
+            parkingCarList.put(receipt, aCar);
+            return receipt;
         }
         else
         {
-            return false ;
+            return null ;
         }
     }
 
 
-    public Car fetchCar(String s) {
-        for(int i = 0; i < parkingCarList.size();i++)
+    public Car fetchCar(ParkingReceipt pReceipt) {
+        if(parkingCarList.containsKey(pReceipt))
         {
-                 if(parkingCarList.elementAt(i).getID() == s)
-                 {
-                     return parkingCarList.remove(i);
-                 }
+            return  parkingCarList.remove(pReceipt);
         }
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        else
+        {
+            return  null;
+        }
+
     }
     public float vacancyRate()
     {
