@@ -1,6 +1,7 @@
 package ParkingManagingSystem;
 
 import java.util.List;
+import java.util.Vector;
 
 /**
  * Created with IntelliJ IDEA.
@@ -11,7 +12,7 @@ import java.util.List;
  */
 public class HighVacancyRateParkingLotChooser implements ParkingLotChooser {
     @Override
-    public ParkingLot getAvailableParkLot(List<ParkingLot> parkingLotList)
+    public ParkingLot getAvailableParkLot(Vector<ParkingLot> parkingLotList)
     {
         if(parkingLotList.size() == 0)
             return null;

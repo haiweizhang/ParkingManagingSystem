@@ -1,6 +1,7 @@
 package ParkingManagingSystem;
 
 import java.util.List;
+import java.util.Vector;
 
 /**
  * Created with IntelliJ IDEA.
@@ -10,5 +11,5 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 public interface ParkingLotChooser {
-    ParkingLot getAvailableParkLot(List<ParkingLot> parkingLotList);
+    ParkingLot getAvailableParkLot(Vector<ParkingLot> parkingLotList);
 }
