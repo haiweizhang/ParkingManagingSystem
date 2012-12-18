@@ -10,6 +10,10 @@ import java.util.HashMap;
  * To change this template use File | Settings | File Templates.
  */
 public class ParkingLot {
+    public int getParkCapacity() {
+        return parkCapacity;
+    }
+
     private int parkCapacity;
     private HashMap<ParkingReceipt, Car> parkingCarList;
 
@@ -58,5 +62,15 @@ public class ParkingLot {
         int availableSpace = availableParkingSpace();
         float rate = (float)availableSpace/parkCapacity;
         return rate;
+    }
+
+    public void Print(int tabs) {
+        System.out.print("车位数：");
+        System.out.println(parkCapacity);
+        for(int i=0; i<tabs+1; i++) {
+            System.out.print('\t');
+        }
+        System.out.print("空位数：");
+        System.out.println(availableParkingSpace());
     }
 }

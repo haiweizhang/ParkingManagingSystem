@@ -13,6 +13,23 @@ public class ParkingBoy {
     Vector<ParkingLot> parkingLotVector;
     ParkingLotChooser parkingLotChooser;
 
+    public int getTotalPlaces() {
+        int totalPlaces = 0;
+        for(ParkingLot parkingLot: parkingLotVector) {
+            totalPlaces += parkingLot.getParkCapacity();
+        }
+        return totalPlaces;
+    }
+
+    public int getAvailablePlaces() {
+        int availablePlaces = 0;
+        for(ParkingLot parkingLot: parkingLotVector) {
+            availablePlaces += parkingLot.availableParkingSpace();
+        }
+        return availablePlaces;
+    }
+
+
     public ParkingBoy(Vector<ParkingLot> parkingLots, ParkingLotChooser parkingLotChooser) {
         parkingLotVector = parkingLots;
         this.parkingLotChooser = parkingLotChooser;
@@ -39,4 +56,25 @@ public class ParkingBoy {
         return parkingLotVector;
     }
 
+    public void Print(int tabs) {
+        for(int i=0; i<parkingLotVector.size(); i++) {
+            for(int j=0; j<tabs; j++) {
+                System.out.print('\t');
+            }
+            System.out.print("停车场编号：");
+            System.out.println(i);
+            parkingLotVector.get(i).Print(tabs+1);
+        }
+
+        for(int i=0; i<tabs+1; i++) {
+            System.out.print('\t');
+        }
+        System.out.print("Total 车位数：");
+        System.out.println(getTotalPlaces());
+        for(int i=0; i<tabs+1; i++) {
+            System.out.print('\t');
+        }
+        System.out.print("Total 空位数：");
+        System.out.println(getAvailablePlaces());
+    }
 }
