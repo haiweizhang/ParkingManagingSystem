@@ -27,5 +27,6 @@ jar.baseName = 'parkingLotsModel'
 
 task sourceJar(type: Jar) {
     from sourceSets.main.allSource
+	from sourceSets.test.allSource
 	baseName = 'parkingLotsModel'
 }
