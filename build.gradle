@@ -24,3 +24,8 @@ tasks.withType(Compile) {
 }
 
 jar.baseName = 'parkingLotsModel'
+
+task sourceJar(type: Jar) {
+    from sourceSets.main.allSource
+	baseName = 'parkingLotsModel'
+}
