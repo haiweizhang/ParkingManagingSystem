@@ -13,7 +13,18 @@ import java.util.Vector;
 public class MaxAvailableParkingLotChooser implements ParkingLotChooser {
     @Override
     public ParkingLot getAvailableParkLot(Vector<ParkingLot> parkingLotVector) {
+        int maxIdx = 0, maxAvailable = 0;
+        for(int i=0; i<parkingLotVector.size(); i++) {
+            if(parkingLotVector.get(i).availableParkingSpace() > maxAvailable) {
+                maxIdx = i;
+                maxAvailable = parkingLotVector.get(i).availableParkingSpace();
+            }
+        }
 
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        if(maxAvailable == 0){
+            return null;
+        } else {
+            return parkingLotVector.get(maxIdx);
+        }
     }
 }
