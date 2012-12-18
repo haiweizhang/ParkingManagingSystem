@@ -65,9 +65,12 @@ public class ParkingLot {
     }
 
     public void Print(int tabs) {
+        for(int i=0; i<tabs; i++) {
+            System.out.print('\t');
+        }
         System.out.print("车位数：");
         System.out.println(parkCapacity);
-        for(int i=0; i<tabs+1; i++) {
+        for(int i=0; i<tabs; i++) {
             System.out.print('\t');
         }
         System.out.print("空位数：");

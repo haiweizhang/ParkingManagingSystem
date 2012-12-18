@@ -591,4 +591,40 @@ public class ParkingManagingSystemTest{
         Assert.assertNotNull(parkingReceipt);
         Assert.assertSame(aManager.fetchCar(parkingReceipt), aCar);
     }
+
+    @Test
+    public void report_for_parking_lot_of_manager_should_reduce_1() {
+        Vector<ParkingLot> parkingLotVector0 = new Vector<ParkingLot>();
+        parkingLotVector0.add(new ParkingLot(100));
+        parkingLotVector0.add(new ParkingLot(100));
+        parkingLotVector0.add(new ParkingLot(100));
+        Vector<ParkingLot> parkingLotVector1 = new Vector<ParkingLot>();
+        parkingLotVector1.add(new ParkingLot(100));
+        parkingLotVector1.add(new ParkingLot(100));
+        parkingLotVector1.add(new ParkingLot(100));
+        Vector<ParkingLot> parkingLotVector2 = new Vector<ParkingLot>();
+        parkingLotVector2.add(new ParkingLot(100));
+        parkingLotVector2.add(new ParkingLot(100));
+        parkingLotVector2.add(new ParkingLot(100));
+        Vector<ParkingLot> parkingLotVector3 = new Vector<ParkingLot>();
+        parkingLotVector3.add(new ParkingLot(100));
+        parkingLotVector3.add(new ParkingLot(100));
+        ParkingBoy aBoy = new ParkingBoy(parkingLotVector0, new FirstAvailableParkingLotChooser());
+        ParkingBoy bBoy = new ParkingBoy(parkingLotVector1, new MaxAvailableParkingLotChooser());
+        ParkingBoy cBoy = new ParkingBoy(parkingLotVector2, new HighVacancyRateParkingLotChooser());
+        ParkingManager aManager = new ParkingManager(parkingLotVector3);
+        aManager.managerAParkingBoy(aBoy);
+        aManager.managerAParkingBoy(bBoy);
+        aManager.managerAParkingBoy(cBoy);
+
+        int leftPlaces = aManager.getAvailablePlaces();
+
+        aManager.Print(0);
+        Car aCar = new Car();
+        ParkingReceipt parkingReceipt = aManager.park(null, aCar);
+
+        Assert.assertNotNull(parkingReceipt);
+        Assert.assertEquals(aManager.getAvailablePlaces(), leftPlaces-1);
+        aManager.Print(0);
+    }
 }

@@ -66,12 +66,12 @@ public class ParkingBoy {
             parkingLotVector.get(i).Print(tabs+1);
         }
 
-        for(int i=0; i<tabs+1; i++) {
+        for(int i=0; i<tabs; i++) {
             System.out.print('\t');
         }
         System.out.print("Total 车位数：");
         System.out.println(getTotalPlaces());
-        for(int i=0; i<tabs+1; i++) {
+        for(int i=0; i<tabs; i++) {
             System.out.print('\t');
         }
         System.out.print("Total 空位数：");
