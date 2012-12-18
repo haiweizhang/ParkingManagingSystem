@@ -1,4 +1,6 @@
-package Main;
+package main;
+
+import main.ParkingBoy;
 
 import java.util.Vector;
 
@@ -96,6 +98,7 @@ public class ParkingManager {
                 System.out.print('\t');
             }
             System.out.print("停车场编号：");
+           
             System.out.println(i);
             parkingLotVector.get(i).Print(tabs+1);
         }

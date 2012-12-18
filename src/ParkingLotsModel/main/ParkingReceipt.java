@@ -1,4 +1,4 @@
-package Main;
+package main;
 
 /**
  * Created with IntelliJ IDEA.

@@ -1,4 +1,6 @@
-package Main;
+package main;
+
+import main.ParkingLot;
 
 import java.util.Vector;
 

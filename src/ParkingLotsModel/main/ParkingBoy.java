@@ -1,4 +1,4 @@
-package Main;
+package main;
 
 import java.util.Vector;
 
@@ -70,6 +70,7 @@ public class ParkingBoy {
             System.out.print('\t');
         }
         System.out.print("Total 车位数：");
+
         System.out.println(getTotalPlaces());
         for(int i=0; i<tabs; i++) {
             System.out.print('\t');
