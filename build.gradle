@@ -2,20 +2,20 @@ apply plugin: 'java'
 apply plugin: 'idea'
 
 dependencies {
-    compile files('D:/Program Files (x86)/JetBrains/IntelliJ IDEA Community Edition 11.1.4/lib/junit-4.10.jar')
-	runtime files('D:/Program Files (x86)/JetBrains/IntelliJ IDEA Community Edition 11.1.4/lib/junit-4.10.jar')
+    compile files('D:/Program Files (x86)/JetBrains/IntelliJ IDEA Community Edition 12.0/lib/junit-4.10.jar')
+	runtime files('D:/Program Files (x86)/JetBrains/IntelliJ IDEA Community Edition 12.0/lib/junit-4.10.jar')
 }
 
 defaultTasks 'clean', 'build', 'test', 'jar', 'sourceJar', 'idea'
 sourceSets {
     main {
         java {
-            srcDir 'src/ParkingLotsModel/main'
+            srcDir 'src/main'
         }
     }
     test {
         java {
-            srcDir 'src/ParkingLotsModel/test'
+            srcDir 'src/test'
         }
     }
 }
