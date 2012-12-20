@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite errors="0" failures="0" hostname="Angelo-HP" name="edu.buaa.parkinglots.test.ParkingManagingSystemTest" tests="33" time="0.24" timestamp="2012-12-20T14:15:27">
+<testsuite errors="0" failures="0" hostname="Angelo-HP" name="edu.buaa.parkinglots.test.ParkingManagingSystemTest" tests="33" time="0.234" timestamp="2012-12-20T14:31:16">
   <properties />
-  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_park_in_the_first_parking_lot_for_normal" time="0.01" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_park_in_the_first_parking_lot_for_normal" time="0.0" />
   <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_park_in_the_second_parking_lot_for_normal" time="0.0" />
   <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_park_in_the_third_parking_lot_for_normal" time="0.0" />
   <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_fetch_the_car_in_the_first_parking_lot_for_normal" time="0.0" />
   <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_fetch_the_car_in_the_third_parking_lot_for_normal" time="0.0" />
-  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_park_in_the_first_parking_lot_for_smart" time="0.01" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_park_in_the_first_parking_lot_for_smart" time="0.0" />
   <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_park_in_the_second_parking_lot_for_smart" time="0.0" />
   <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_park_in_the_third_parking_lot_for_smart" time="0.0" />
   <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_fetch_the_car_in_the_first_parking_lot_for_smart" time="0.0" />
   <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_fetch_the_car_in_the_third_parking_lot_for_smart" time="0.0" />
-  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_park_in_the_first_parking_lot_for_super" time="0.01" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_park_in_the_first_parking_lot_for_super" time="0.0" />
   <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_park_in_the_second_parking_lot_for_super" time="0.0" />
   <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_park_in_the_third_parking_lot_for_super" time="0.0" />
   <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_fetch_the_car_in_the_first_parking_lot_for_super" time="0.0" />
   <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_fetch_the_car_in_the_third_parking_lot_for_super" time="0.0" />
-  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_park_in_the_first_parking_lot_of_normal_boy" time="0.02" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_park_in_the_first_parking_lot_of_normal_boy" time="0.016" />
   <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_park_in_the_max_available_parking_lot_of_smart_boy" time="0.0" />
   <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_park_in_the_highest_vacancy_parking_lot_of_super_boy" time="0.0" />
   <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_park_in_the_max_available_parking_lot_of_manager" time="0.0" />
   <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_fetch_the_same_car_from_parking_lot_of_manager" time="0.0" />
-  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="report_for_parking_lot_of_manager_should_reduce_1" time="0.02" />
-  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="report_for_parking_lot_of_normal_boy_should_reduce_1" time="0.01" />
-  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="report_for_parking_lot_of_smart_boy_should_reduce_1" time="0.04" />
-  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="report_for_parking_lot_of_super_boy_should_reduce_1" time="0.03" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="report_for_parking_lot_of_manager_should_reduce_1" time="0.031" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="report_for_parking_lot_of_normal_boy_should_reduce_1" time="0.016" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="report_for_parking_lot_of_smart_boy_should_reduce_1" time="0.015" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="report_for_parking_lot_of_super_boy_should_reduce_1" time="0.063" />
   <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="parking_should_succeed" time="0.0" />
   <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="parking_should_fail" time="0.0" />
   <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_fetch_the_same_car" time="0.0" />
