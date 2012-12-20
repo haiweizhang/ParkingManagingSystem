@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" hostname="Angelo-HP" name="edu.buaa.parkinglots.test.ParkingManagingSystemTest" tests="33" time="0.24" timestamp="2012-12-20T14:15:27">
+  <properties />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_park_in_the_first_parking_lot_for_normal" time="0.01" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_park_in_the_second_parking_lot_for_normal" time="0.0" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_park_in_the_third_parking_lot_for_normal" time="0.0" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_fetch_the_car_in_the_first_parking_lot_for_normal" time="0.0" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_fetch_the_car_in_the_third_parking_lot_for_normal" time="0.0" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_park_in_the_first_parking_lot_for_smart" time="0.01" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_park_in_the_second_parking_lot_for_smart" time="0.0" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_park_in_the_third_parking_lot_for_smart" time="0.0" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_fetch_the_car_in_the_first_parking_lot_for_smart" time="0.0" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_fetch_the_car_in_the_third_parking_lot_for_smart" time="0.0" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_park_in_the_first_parking_lot_for_super" time="0.01" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_park_in_the_second_parking_lot_for_super" time="0.0" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_park_in_the_third_parking_lot_for_super" time="0.0" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_fetch_the_car_in_the_first_parking_lot_for_super" time="0.0" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_fetch_the_car_in_the_third_parking_lot_for_super" time="0.0" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_park_in_the_first_parking_lot_of_normal_boy" time="0.02" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_park_in_the_max_available_parking_lot_of_smart_boy" time="0.0" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_park_in_the_highest_vacancy_parking_lot_of_super_boy" time="0.0" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_park_in_the_max_available_parking_lot_of_manager" time="0.0" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_fetch_the_same_car_from_parking_lot_of_manager" time="0.0" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="report_for_parking_lot_of_manager_should_reduce_1" time="0.02" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="report_for_parking_lot_of_normal_boy_should_reduce_1" time="0.01" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="report_for_parking_lot_of_smart_boy_should_reduce_1" time="0.04" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="report_for_parking_lot_of_super_boy_should_reduce_1" time="0.03" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="parking_should_succeed" time="0.0" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="parking_should_fail" time="0.0" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_fetch_the_same_car" time="0.0" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="park_should_fail_for_normal" time="0.0" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="park_should_fail_for_smart" time="0.0" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="park_should_fail_for_super" time="0.0" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="fetching_two_car_should_succeed" time="0.0" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_not_fetch_the_same_car" time="0.0" />
+  <testcase classname="edu.buaa.parkinglots.test.ParkingManagingSystemTest" name="should_not_fetch_the_same_car_twice" time="0.0" />
+  <system-out><![CDATA[停车场编号：0
+	车位数：100
+	空位数：100
+停车场编号：1
+	车位数：100
+	空位数：100
+停车仔编号：0
+	停车场编号：0
+		车位数：100
+		空位数：100
+	停车场编号：1
+		车位数：100
+		空位数：100
+	停车场编号：2
+		车位数：100
+		空位数：100
+	Total 车位数：300
+	Total 空位数：300
+停车仔编号：1
+	停车场编号：0
+		车位数：100
+		空位数：100
+	停车场编号：1
+		车位数：100
+		空位数：100
+	停车场编号：2
+		车位数：100
+		空位数：100
+	Total 车位数：300
+	Total 空位数：300
+停车仔编号：2
+	停车场编号：0
+		车位数：100
+		空位数：100
+	停车场编号：1
+		车位数：100
+		空位数：100
+	停车场编号：2
+		车位数：100
+		空位数：100
+	Total 车位数：300
+	Total 空位数：300
+Total 车位数：1100
+Total 空位数：1100
+===========================================
+停车场编号：0
+	车位数：100
+	空位数：100
+停车场编号：1
+	车位数：100
+	空位数：99
+停车仔编号：0
+	停车场编号：0
+		车位数：100
+		空位数：100
+	停车场编号：1
+		车位数：100
+		空位数：100
+	停车场编号：2
+		车位数：100
+		空位数：100
+	Total 车位数：300
+	Total 空位数：300
+停车仔编号：1
+	停车场编号：0
+		车位数：100
+		空位数：100
+	停车场编号：1
+		车位数：100
+		空位数：100
+	停车场编号：2
+		车位数：100
+		空位数：100
+	Total 车位数：300
+	Total 空位数：300
+停车仔编号：2
+	停车场编号：0
+		车位数：100
+		空位数：100
+	停车场编号：1
+		车位数：100
+		空位数：100
+	停车场编号：2
+		车位数：100
+		空位数：100
+	Total 车位数：300
+	Total 空位数：300
+Total 车位数：1100
+Total 空位数：1099
+===========================================
+停车场编号：0
+	车位数：100
+	空位数：100
+停车场编号：1
+	车位数：100
+	空位数：100
+停车仔编号：0
+	停车场编号：0
+		车位数：100
+		空位数：100
+	停车场编号：1
+		车位数：100
+		空位数：100
+	停车场编号：2
+		车位数：100
+		空位数：100
+	Total 车位数：300
+	Total 空位数：300
+停车仔编号：1
+	停车场编号：0
+		车位数：100
+		空位数：100
+	停车场编号：1
+		车位数：100
+		空位数：100
+	停车场编号：2
+		车位数：100
+		空位数：100
+	Total 车位数：300
+	Total 空位数：300
+停车仔编号：2
+	停车场编号：0
+		车位数：100
+		空位数：100
+	停车场编号：1
+		车位数：100
+		空位数：100
+	停车场编号：2
+		车位数：100
+		空位数：100
+	Total 车位数：300
+	Total 空位数：300
+Total 车位数：1100
+Total 空位数：1100
+===========================================
+停车场编号：0
+	车位数：100
+	空位数：100
+停车场编号：1
+	车位数：100
+	空位数：100
+停车仔编号：0
+	停车场编号：0
+		车位数：100
+		空位数：99
+	停车场编号：1
+		车位数：100
+		空位数：100
+	停车场编号：2
+		车位数：100
+		空位数：100
+	Total 车位数：300
+	Total 空位数：299
+停车仔编号：1
+	停车场编号：0
+		车位数：100
+		空位数：100
+	停车场编号：1
+		车位数：100
+		空位数：100
+	停车场编号：2
+		车位数：100
+		空位数：100
+	Total 车位数：300
+	Total 空位数：300
+停车仔编号：2
+	停车场编号：0
+		车位数：100
+		空位数：100
+	停车场编号：1
+		车位数：100
+		空位数：100
+	停车场编号：2
+		车位数：100
+		空位数：100
+	Total 车位数：300
+	Total 空位数：300
+Total 车位数：1100
+Total 空位数：1099
+===========================================
+停车场编号：0
+	车位数：100
+	空位数：100
+停车场编号：1
+	车位数：100
+	空位数：100
+停车仔编号：0
+	停车场编号：0
+		车位数：100
+		空位数：100
+	停车场编号：1
+		车位数：100
+		空位数：100
+	停车场编号：2
+		车位数：100
+		空位数：100
+	Total 车位数：300
+	Total 空位数：300
+停车仔编号：1
+	停车场编号：0
+		车位数：100
+		空位数：100
+	停车场编号：1
+		车位数：100
+		空位数：100
+	停车场编号：2
+		车位数：100
+		空位数：100
+	Total 车位数：300
+	Total 空位数：300
+停车仔编号：2
+	停车场编号：0
+		车位数：100
+		空位数：100
+	停车场编号：1
+		车位数：100
+		空位数：100
+	停车场编号：2
+		车位数：100
+		空位数：100
+	Total 车位数：300
+	Total 空位数：300
+Total 车位数：1100
+Total 空位数：1100
+===========================================
+停车场编号：0
+	车位数：100
+	空位数：100
+停车场编号：1
+	车位数：100
+	空位数：100
+停车仔编号：0
+	停车场编号：0
+		车位数：100
+		空位数：100
+	停车场编号：1
+		车位数：100
+		空位数：100
+	停车场编号：2
+		车位数：100
+		空位数：100
+	Total 车位数：300
+	Total 空位数：300
+停车仔编号：1
+	停车场编号：0
+		车位数：100
+		空位数：99
+	停车场编号：1
+		车位数：100
+		空位数：100
+	停车场编号：2
+		车位数：100
+		空位数：100
+	Total 车位数：300
+	Total 空位数：299
+停车仔编号：2
+	停车场编号：0
+		车位数：100
+		空位数：100
+	停车场编号：1
+		车位数：100
+		空位数：100
+	停车场编号：2
+		车位数：100
+		空位数：100
+	Total 车位数：300
+	Total 空位数：300
+Total 车位数：1100
+Total 空位数：1099
+===========================================
+停车场编号：0
+	车位数：100
+	空位数：100
+停车场编号：1
+	车位数：100
+	空位数：100
+停车仔编号：0
+	停车场编号：0
+		车位数：100
+		空位数：100
+	停车场编号：1
+		车位数：100
+		空位数：100
+	停车场编号：2
+		车位数：100
+		空位数：100
+	Total 车位数：300
+	Total 空位数：300
+停车仔编号：1
+	停车场编号：0
+		车位数：100
+		空位数：100
+	停车场编号：1
+		车位数：100
+		空位数：100
+	停车场编号：2
+		车位数：100
+		空位数：100
+	Total 车位数：300
+	Total 空位数：300
+停车仔编号：2
+	停车场编号：0
+		车位数：100
+		空位数：100
+	停车场编号：1
+		车位数：100
+		空位数：100
+	停车场编号：2
+		车位数：100
+		空位数：100
+	Total 车位数：300
+	Total 空位数：300
+Total 车位数：1100
+Total 空位数：1100
+===========================================
+停车场编号：0
+	车位数：100
+	空位数：100
+停车场编号：1
+	车位数：100
+	空位数：100
+停车仔编号：0
+	停车场编号：0
+		车位数：100
+		空位数：100
+	停车场编号：1
+		车位数：100
+		空位数：100
+	停车场编号：2
+		车位数：100
+		空位数：100
+	Total 车位数：300
+	Total 空位数：300
+停车仔编号：1
+	停车场编号：0
+		车位数：100
+		空位数：100
+	停车场编号：1
+		车位数：100
+		空位数：100
+	停车场编号：2
+		车位数：100
+		空位数：100
+	Total 车位数：300
+	Total 空位数：300
+停车仔编号：2
+	停车场编号：0
+		车位数：100
+		空位数：99
+	停车场编号：1
+		车位数：100
+		空位数：100
+	停车场编号：2
+		车位数：100
+		空位数：100
+	Total 车位数：300
+	Total 空位数：299
+Total 车位数：1100
+Total 空位数：1099
+===========================================
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
